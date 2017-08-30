@@ -23,11 +23,13 @@ public class FlowerStore {
         return flowers_arr;
     }
 
-    public static int CountI(){
+    public static int IPlusOne(){
         return i++;
     }
 
-    public static int C
+    public static int CountMinusOne(int count){
+        return count-1;
+    }
 
     public static Flowers[] sellSequence(int RoseCount,int ChamomileCount, int TulipCount){
 
@@ -35,25 +37,23 @@ public class FlowerStore {
 
         for(i=0;i<flowers_arr.length;){
 
-            if (count1>0){
+            if (RoseCount>0){
                 flowers_arr[i]=new rose();
-                //count1=-1;
-                CountI();
+                CountMinusOne(RoseCount);
+                IPlusOne();
             }
-/*
-            if (count2>0){
+
+            if (ChamomileCount>0){
                 flowers_arr[i]=new chamomile();
-                count2=-1;
-                CountI()
+                CountMinusOne(ChamomileCount);
+                IPlusOne();
             }
 
-            if (count3>0){
+            if (TulipCount>0){
                 flowers_arr[i]=new tulip();
-                count3=-1;
-                i=+1;
+                CountMinusOne(TulipCount);
+                IPlusOne();
             }
-
-            */
 
         }
 
