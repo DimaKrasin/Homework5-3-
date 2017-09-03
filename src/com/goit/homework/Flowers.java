@@ -2,9 +2,13 @@ package com.goit.homework;
 
 public class Flowers {
 
-    static int cost;
+    int cost;
 
     public void show(){
-        System.out.println("Это цветок");
+        System.out.println("Это цветок : "+this.getClass().getSimpleName());
+    }
+
+    public int GetCost(){
+        return cost;
     }
 }

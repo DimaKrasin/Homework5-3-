@@ -10,17 +10,17 @@ public class FlowerStore {
 
         for(int i =0;i<RoseCount;i++){
             flowers_arr[i]=new rose();
-            setVallet(rose.cost);
+            setVallet(100);
         }
 
         for(int i = RoseCount;i<RoseCount+ChamomileCount;i++){
             flowers_arr[i]=new chamomile();
-            setVallet(chamomile.cost);
+            setVallet(70);
         }
 
         for(int i = RoseCount+ChamomileCount;i<RoseCount+ChamomileCount+TulipCount;i++){
             flowers_arr[i]=new tulip();
-            setVallet(tulip.cost);
+            setVallet(45);
         }
 
         return flowers_arr;
@@ -36,21 +36,21 @@ public class FlowerStore {
                 flowers_arr[i]=new rose();
                 CountMinusOne(RoseCount);
                 IPlusOne();
-                setVallet(rose.cost);
+                setVallet(100);
             }
 
             if (ChamomileCount>0){
                 flowers_arr[i]=new chamomile();
                 CountMinusOne(ChamomileCount);
                 IPlusOne();
-                setVallet(chamomile.cost);
+                setVallet(70);
             }
 
             if (TulipCount>0){
                 flowers_arr[i]=new tulip();
                 CountMinusOne(TulipCount);
                 IPlusOne();
-                setVallet(tulip.cost);
+                setVallet(45);
             }
 
         }
@@ -70,8 +70,8 @@ public class FlowerStore {
 
     static private int vallet = 0;
 
-    static int setVallet(int cost){
-        return vallet = vallet +cost;
+    static void setVallet(int cost){
+        vallet = vallet +cost;
     }
 
     static void showVallet(){
