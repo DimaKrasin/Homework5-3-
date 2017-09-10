@@ -4,9 +4,10 @@ public class Main {
     public static void main(String[] args) {
 
         //sell
-
+        /*
         for(Flowers ArrElement:FlowerStore.sell(3,3,3)) {
             ArrElement.show();}
+         */
 
 
 
